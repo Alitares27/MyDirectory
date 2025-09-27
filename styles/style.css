@@ -1,0 +1,310 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background: linear-gradient(120deg, #0f2027, #2c5364, #1a2980);
+    color: #e0e0e0;
+    font-family: 'Orbitron', 'Roboto Mono', 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+    font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+    font-weight: 700;
+    color: #00ffc8;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 0 2px 8px #00ffe7, 0 0 8px rgba(0, 255, 200, 0.4), 0 0 16px rgba(0, 255, 200, 0.2);
+}
+
+h1 {
+    margin: 30px 0 20px;
+}
+
+/* ==============================
+    DIRECTORY HOME
+    ============================== */
+.directory-home {
+    background: rgba(20, 30, 48, 0.85);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 700px;
+    border: 1px solid #00ffe7;
+}
+
+/* Sections */
+.welcome-section,
+.features-section,
+.cta-section {
+    margin-bottom: 32px;
+}
+
+/* Features List */
+.features-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features-section li {
+    background: linear-gradient(90deg, #00ffe7 0%, #0072ff 100%);
+    color: #222;
+    margin: 10px 0;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px #00ffe744;
+}
+
+/* ==============================
+    HEADER & NAV
+    ============================== */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #161b22;
+    padding: 12px 30px;
+    border-bottom: 2px solid #00ffc8;
+    box-shadow: 0 2px 10px rgba(0, 255, 200, 0.15);
+    flex-wrap: wrap;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #00ffc8;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #e6e6e6;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.main-nav a:hover {
+    background: #00ffc8;
+    color: #0d1117;
+    box-shadow: 0 0 10px #00ffc8;
+}
+
+/* ==============================
+    TABLE
+    ============================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(22, 27, 34, 0.95);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 255, 200, 0.08);
+    margin: 20px 0;
+}
+
+th,
+td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #30363d;
+    vertical-align: middle;
+}
+
+th {
+    background: #0d1117;
+    color: #00ffc8;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+tr:hover {
+    background: rgba(167, 240, 224, 0.164);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* ==============================
+    BUTTONS
+    ============================== */
+button,
+.btn-primary {
+    display: inline-block;
+    padding: 14px 32px;
+    background: linear-gradient(90deg, #00ffe7 0%, #0072ff 100%);
+    color: #222;
+    font-size: 1.2em;
+    font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px #00ffe744;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+button:hover,
+.btn-primary:hover {
+    background: linear-gradient(90deg, #0072ff 0%, #00ffe7 100%);
+    color: #fff;
+    box-shadow: 0 8px 32px #00ffe799;
+    transform: translateY(-2px) scale(1.04);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Variants */
+button[name="delete_department"] {
+    background: linear-gradient(90deg, #ff4e50 0%, #a32c23 100%);
+    color: #fff;
+}
+
+button[name="delete_department"]:hover {
+    background: linear-gradient(90deg, #a32c23 0%, #ff4e50 100%);
+}
+
+button[name="edit_department"] {
+    background: linear-gradient(90deg, #ffc107 0%, #e0a800 100%);
+    color: #0d1117;
+}
+
+button[name="edit_department"]:hover {
+    background: linear-gradient(90deg, #e0a800 0%, #ffc107 100%);
+    color: #0d1117;
+}
+
+/* ==============================
+    FORMS
+    ============================== */
+.add-department-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    padding-left: 2em;
+    margin: 0;
+}
+
+form input[type="text"], form input[type="email"],
+form select {
+    background: #161b22;
+    border: 1px solid #30363d;
+    padding: 10px 14px;
+    border-radius: 8px;
+    color: #e6e6e6;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    outline: none;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+form input[type="text"]:focus, form input[type="email"]:focus,
+form select:focus {
+    border-color: #00ffc8;
+    box-shadow: 0 0 6px #00ffc8;
+}
+
+/* Grouped action buttons */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+/* ==============================
+    FOOTER
+    ============================== */
+.footer {
+    margin-top: 5em;
+    background: #161b22;
+    border-top: 2px solid #00ffc8;
+    box-shadow: 0 -2px 10px rgba(0, 255, 200, 0.15);
+    border-radius: 0 0 18px 18px;
+    text-align: center;
+    padding: 20px 30px;
+    color: #00ffc8;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+}
+
+.no-records {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: #aaa;
+}
+
+/* ==============================
+    RESPONSIVE
+    ============================== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .directory-home {
+        padding: 20px;
+        margin: 20px;
+        max-width: 98vw;
+    }
+}
